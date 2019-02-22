@@ -1,0 +1,108 @@
+﻿body 
+{
+    padding: 0;
+    margin: 0;
+    background: #6e6e6e;
+    height: 100vh;
+}
+
+.PageContainer
+{
+    width:750px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.HeaderContainer
+{
+    font-size: 42px;
+    font-weight: bold;
+    font-family: Elephant, Arial;
+    color: #ff6a00;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #6e6e6e;
+}
+
+.SiteHeader 
+{
+    vertical-align: middle;
+}
+
+.MainContainer
+{
+    padding: 25px;
+}
+
+table
+{
+    width: 100%;
+}
+
+.WordSearchTableCell {
+    line-height: 16px;
+    height: 25px;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+    background-color: #6e6e6e;
+    color: #ff6a00;
+    border-radius: 100%;
+    font-weight: bold;
+    text-align: center;
+    width: 25px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.WordSearchTableCell_Hover
+{
+    background: #ff6a00;
+    border: 1px solid #6e6e6e;
+    color: #6e6e6e;
+    width: 23px;
+    height: 23px;
+}
+
+.WordSearchTableCell_Found
+{
+    background: #000000;
+    color: #ff6a00;
+    border: 1px solid #ff6a00;
+    width: 23px;
+    height: 23px;
+}
+
+input[type="checkbox"]
+{
+    opacity: 0;
+}
+
+    input[type='checkbox']:checked + label {
+        background-image: url(Images/CheckBox-Checked.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        line-height: 24px;
+        padding-left: 30px;
+        font-size: 18px;
+        height: 24px;
+        cursor: pointer;
+        clear: none;
+    }
+
+    input[type='checkbox']:not(:checked) + label {
+        background-image: url(Images/CheckBox-UnChecked.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        line-height: 24px;
+        padding-left: 30px;
+        font-size: 18px;
+        height: 24px;
+        cursor: pointer;
+        clear: none;
+    }

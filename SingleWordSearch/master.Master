@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="SingleWordSearch.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WordSearch Screen</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="stylesheet" href="App_Themes/Main/Main.css" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="PageContainer">
+            <asp:Panel ID="panelHeader" runat="server" CssClass="HeaderContainer">
+                <asp:Label runat="server" CssClass="SiteHeader">Word Search Game</asp:Label>
+            </asp:Panel>
+            <div class="MainContainer">
+                <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <asp:Panel ID="panelFooter" runat="server" CssClass="PanelFooter">
+
+            </asp:Panel>
+        </div>
+    </form>
+</body>
+</html>
