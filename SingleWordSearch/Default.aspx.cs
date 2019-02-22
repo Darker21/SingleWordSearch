@@ -13,22 +13,18 @@ namespace SingleWordSearch
 
         protected void Page_PreInit(object sender, EventArgs e)
         {
-            Response.Write("Message from Pre_Init<br />");
         }
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            Response.Write("Message from Pre_Render<br />");
         }
         protected void Page_Init(object sender, EventArgs e)
         {
-            Response.Write("Message from Init<br />");
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
             WordSearchGenerator gen = new WordSearchGenerator(dictPuzzle1, false);
             gen.GenerateTable(panelWordSearch, PanelWordsToFind);
-            Response.Write("Message from Load<br />");
         }
     }
 }
